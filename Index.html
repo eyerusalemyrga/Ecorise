@@ -1,1 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ 
+</head>
+
+<body>
+    <section class="header">
+        <img src="images/logo.png" id="image-logo">
+        <nav>
+            <div class="hamburger" id="openMenu">
+                <i class="fa fa-bars"></i>
+            </div>
+            <div class="nav-menu" id="navMenu">
+
+                <div class="close-btn" id="closeMenu">
+                    <i class="fa fa-times"></i>
+                </div>
+                <a href="#" id="link">Home</a>
+                <a href="#section-about" id="link1">About Us</a>                
+                <a href="#services" id="link3">Services</a>
+                <a href="#gallery" id="link2">Gallery</a>
+                <a href="#section-contact" id="link4">Contact</a>
+            </div>
+        </nav>
+        <div class="text-box">
+            <h1>Recycle clothes today</h1>
+            <p>
+                Let's protect our environment together by recreating
+                clothes into unique materials
+            </p>
+            <a href="#section-about" class="header-btn">Explore more</a>
+        </div>
+    </section>
+
+    <!-- About Us -->
+     <section id="section-about">
+        <div class="what-we-do">
+            <h2>What we do?</h2>
+            <p>
+                We are dedicated to transforming the way we think about clothing. We collect and process unwanted textiles, diverting them from landfills and giving them a second life through reuse, resale, and innovative recycling technologies. By promoting a circular economy for textiles, we aim to conserve resources, reduce environmental impact, and create positive social change in our community and beyond. We believe that every piece of clothing has value, and we're committed to ensuring it stays in use and out of the waste stream
+            </p>
+        </div>
+ 
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+        <div>
+            <h2 id="gallery_id">Gallery</h2>
+        </div>
+        <!-- Row 1 -->
+        <div id="title">
+            <h3>Home decors</h3>
+        </div>
+
+        <div id="scroll-row">
+            <div class="arrow-btn left-arrow" onclick="scrollRowLeft('row1')" id="left"> <i class="fas fa-angle-left"
+                    style="color: white;"></i></div>
+            <div class="image-container" id="row1">
+
+                <img src="gallery/home1.jpeg">
+                <img src="gallery/home2.jpeg">
+                <img src="gallery/home3.jpeg">
+                <img src="gallery/home4.jpeg">
+                <img src="gallery/home5.jpeg">
+                <img src="gallery/home6.jpeg">
+                <img src="gallery/home7.jpeg">
+                <img src="gallery/home8.jpeg">
+                <img src="gallery/home9.jpeg">
+                <img src="gallery/home10.jpeg">
+
+
+            </div>
+            <div class="arrow-btn right-arrow" onclick="scrollRight('row1')"> <i class="fas fa-angle-right"
+                    style="color:  white;;"></i></div>
+        </div>
+        <div id="title">
+            <h3>Fashion</h3>
+
+        </div>
+        <!-- Row 2 -->
+        <div id="scroll-row">
+            <span class="arrow-btn left-arrow" onclick="scrollRowLeft('row2')" id=""> <i class="fas fa-angle-left"
+                    style="color: white;;"></i></i></span>
+            <div class="image-container" id="row2">
+                <img src="gallery/fashion1.jpeg">
+                <img src="gallery/fashion2.jpeg">
+                <img src="gallery/fashion3.jpeg">
+                <img src="gallery/fashion4.jpeg">
+                <img src="gallery/fashion5.jpeg">
+                <img src="gallery/fashion6.jpeg">
+                <img src="gallery/fashion7.jpeg">
+                <img src="gallery/fashion8.jpeg">
+                <img src="gallery/fashion9.jpeg">
+                <img src="gallery/fashion10.jpeg">
+                <img src="gallery/fashion11.jpeg">
+
+            </div>
+            <span class="arrow-btn right-arrow" onclick="scrollRight('row2')" id="rowId"> <i class="fas fa-angle-right"
+                    style="color:  white;;"></i></span>
+        </div>
+        <!-- Row 3 -->
+        <div id="title">
+            <h3>Bags</h3>
+        </div>
+        <div id="scroll-row">
+            <span class="arrow-btn left-arrow" onclick="scrollRowLeft('row3')"> <i class="fas fa-angle-left"
+                    style="color:  white;;"></i></span>
+            <div class="image-container" id="row3">
+                <img src="gallery/bag1.jpeg">
+                <img src="gallery/bag2.jpeg">
+                <img src="gallery/bag3.jpeg">
+                <img src="gallery/bag4.jpeg">
+                <img src="gallery/bag5.jpeg">
+                <img src="gallery/bag6.jpeg">
+                <img src="gallery/bag7.jpeg">
+                <img src="gallery/bag9.jpeg">
+                <img src="gallery/bag10.jpeg">
+
+
+            </div>
+            
+            <span class="arrow-btn left-arrow" onclick="scrollRowLeft('row1')" id="left">
+                <i class="fa-solid fa-angle-left" style="color: white;"></i>
+            </span>
+            <div class="image-container" id="row1">
+                <!-- images here -->
+            </div>
+            <span class="arrow-btn right-arrow" onclick="scrollRight('row1')">
+                <i class="fa-solid fa-angle-right" style="color: white;"></i>
+            </span>
+        </div>
+    </section>
+    
+    <section id="services">
+        <h2 class="heading">Our Services</h2>
+        <br>
+        <div class="our-services">
+            <div class="pickup-service">
+                <img src="images/truck.jpg">
+                <h3>Pick-up</h3>
+                <p>We give pick up services.Traders request pick up from our schedule ,the schedule have different
+                    dates and days for different locations </p>
+            </div>
+            <div class="payment-service">
+                <img src="images/payment.jpg">
+                <h3>Payment</h3>
+                <p>Receive payments and rewards when you sell clothes.Payment is based on material and
+                    quantity.Traders are being rewarded when they reach a minimum of 500 points</p>
+            </div>
+            <div class="recycling-service">
+                <img src="images/recycling.avif">
+                <h3>Recycling</h3>
+                <p>Recycling is our main purpose. This is to prevent the environment from being polluted.It enhances
+                    living in a clean environment and unsold clothes being a profit to traders rather than loss </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-contact">
+
+        <div class="container">
+            <h2 id="Contact-us">Contact us</h2>
+
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- address  -->
+                <div class="contact-info">
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h5>Address</h5>
+                            <p>Mururui Rd  Nairobi,Kenya</p>
+                        </div>
+                    </div>
+                    <!-- phone -->
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h5>Phone number</h5>
+                            <p>0742838976</p>
+                        </div>
+                    </div>
+
+                    <!-- email -->
+
+                    <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                            <i class="fa-solid fa-envelope">
+                                <a href="mangaramuor@gmail.com"></a>
+                            </i>
+                        </div>
+                        <div class="contact-info-content">
+                            <h5>Email</h5>
+                            <p>@ecorise.com</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="contact-form">
+                    <form id="submit-form">
+                        <h4>Contact us </h4>
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Name" required="true">
+                        <br>
+                        <br>
+
+                        <label for="loca">Message</label>
+                        <textarea name="message" id="feedback" placeholder="Type your message" rows="9" cols="20"></textarea>
+                        <button>Send</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="location">
+            <h2>Find us here</h2>
+            <p id="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.719378579846!2d36.724817574066705!3d-1.3448020986424467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109997354b97%3A0xe54a131abd8ebdb2!2sAkiraChix!5e0!3m2!1sen!2ske!4v1751537284730!5m2!1sen!2ske"></iframe>
+            </p> 
+        </div>
+
+
+        <footer class="end-page">
+            <div class="footer">
+
+                <div class="footer-detail">
+                    <h4> Get in touch with us</h4>
+                    <span><i class="fa-solid fa-envelope"></i>ecorise@gmail.com</span>
+                    <br>
+                    <span><i class="fa-solid fa-phone" id="call"></i> +254 756 336 637</span>
+                    <br>
+                    </i>
+                    <span><i class="fa-solid fa-location-dot"></i> Korongo Rd</span>
+                </div>
+
+
+            </div>
+
+            <hr>
+            <div class="copy-right">
+                <p id="copy"><i class="fa-solid fa-copyright"></i>  Copyright 2025, All Rights Reserved by ecorise</p>
+            </div>
+        </footer>
+
+    </section>
+    <script src="index.js"></script>
+
+</body>
+
+  </html>
